@@ -1,0 +1,4 @@
+#RewriteEngine On
+#RewriteCond $1 !^(index\.php)
+RewriteRule ^([A-Z0-9_-]+)$ index.php?book=$1 [L]
+#ErrorDocument 404 /404.php
